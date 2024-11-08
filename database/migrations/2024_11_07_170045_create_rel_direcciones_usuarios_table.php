@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->unsignedInteger('id_user');
             $table->unsignedInteger('id_direccion');
-            
         });
     }
 

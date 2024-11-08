@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('comunas', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('id_region');
-            $table->string('id_region', 150);
+            $table->string('comuna', 150);
 
             $table->foreign('id_region') // Nombre de la columna
                 ->references('id') // Columna referenciada en la tabla `users`

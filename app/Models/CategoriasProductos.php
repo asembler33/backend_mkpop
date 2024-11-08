@@ -5,7 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 class CategoriasProductos extends Model{
-    
-    public $fillable = ['id', 'categoria'];
+
+    protected $table = 'categorias_productos';
+    protected $fillable = ['id', 'categoria'];
     
 }
